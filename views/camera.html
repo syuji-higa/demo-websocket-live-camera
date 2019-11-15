@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Camera</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    #canvas {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" width="640" height="480" autoplay></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+
+  <script>
+    if (typeof APP !== 'undefined') {
+      throw new Error('namespace "APP" is already exists.')
+    }
+    window.APP = {}
+    APP.IP_ADDRESS = '{{ ipAddress }}'
+    APP.PORT = '{{ port }}'
+  </script>
+  <script src="/camera.js" async defer></script>
+</body>
+</html>

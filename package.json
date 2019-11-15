@@ -1,0 +1,30 @@
+{
+  "name": "websocket-live-camera",
+  "version": "1.0.0",
+  "description": "WebSocket Live Camera",
+  "scripts": {
+    "start:server": "nodemon server.js",
+    "start:client": "nodemon client.js",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "author": "syuji-higa",
+  "license": "MIT",
+  "dependencies": {
+    "co-views": "^2.1.0",
+    "colors": "^1.4.0",
+    "internal-ip": "^5.0.0",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "swig": "^1.4.2",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1"
+  }
+}
